@@ -1,8 +1,66 @@
 <html>
+<Style>
+.newspaper {
+  column-count: 3;
+}
+	input[type=text], select {
+	  width: 100%;
+	  padding: 11px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+}
+	input[type=number], select {
+	  width: 100%;
+	  padding: 11px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+}
+	input[type=phone], select {
+	  width: 100%;
+	  padding: 10px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+}
+	input[type=email], select {
+	  width: 100%;
+	  padding: 10px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+}
+	input[type=Submit], select {
+	  width: 100%;
+	  padding: 10px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+}
+</Style>
 <head>
+<Style>
+body {
+	background-color: lightgray;
+}
+</Style>
 </head>
 <body>
+<nav>
   <a href="other.php">Grower</a> <a href="otherfield.php">Field</a> <a href="manure.php">Manure</a> <a href="fertapps.php">Fertilizer Applications</a> <a href="otherlogin.php">Login</a> <a href="otherregister.php">Register</a>
+</nav>
+<div class="newspaper">
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     First Name:<input type="text" name="FirstName"></input>
     Middle Initial:<input type="text" name="MI"></input>
@@ -15,7 +73,8 @@
     Home Phone:<input type="phone" name="Home"></input>
     Mobile Phone:<input type="phone" name="Mobile"></input>
     Email:<input type="email" name="Email"></input>
-    <input type="submit"></input>
+    Finish:<input type="submit"></input>
+</div>
   </form>
 <?php
 session_start();

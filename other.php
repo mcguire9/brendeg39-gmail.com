@@ -3,7 +3,7 @@
 .newspaper {
   column-count: 3;
 }
-	input[type=text], select {
+	input {
 	  width: 100%;
 	  padding: 11px;
 	  margin: 8px 0;
@@ -12,41 +12,8 @@
 	  border-radius: 4px;
 	  box-sizing: border-box;
 }
-	input[type=number], select {
-	  width: 100%;
-	  padding: 11px;
-	  margin: 8px 0;
-	  display: inline-block;
-	  border: 1px solid #ccc;
-	  border-radius: 4px;
-	  box-sizing: border-box;
-}
-	input[type=phone], select {
-	  width: 100%;
-	  padding: 10px;
-	  margin: 8px 0;
-	  display: inline-block;
-	  border: 1px solid #ccc;
-	  border-radius: 4px;
-	  box-sizing: border-box;
-}
-	input[type=email], select {
-	  width: 100%;
-	  padding: 10px;
-	  margin: 8px 0;
-	  display: inline-block;
-	  border: 1px solid #ccc;
-	  border-radius: 4px;
-	  box-sizing: border-box;
-}
-	input[type=Submit], select {
-	  width: 100%;
-	  padding: 10px;
-	  margin: 8px 0;
-	  display: inline-block;
-	  border: 1px solid #ccc;
-	  border-radius: 4px;
-	  box-sizing: border-box;
+table {
+  border: 1px solid black;
 }
 </Style>
 <head>
